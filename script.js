@@ -213,12 +213,25 @@ $(function() {
             bTime = bTime.getTime();
 
             if (flag != 0) {
-                audio.play();
-                playerTrack.addClass('active');
-                albumArt.addClass('active');
-
-                clearInterval(buffInterval);
-                checkBuffering();
+                var promise = audio.play();
+                if (promise !== undefined) {
+                    promise.then(_ => {
+                        // Autoplay started!
+                        playerTrack.addClass('active');
+                        albumArt.addClass('active');
+                        clearInterval(buffInterval);
+                        checkBuffering();
+                            }).catch(error => {
+                                playerTrack.removeClass('active');
+                                albumArt.removeClass('active');
+                                clearInterval(buffInterval);
+                                albumArt.removeClass('buffering');
+                                i.attr('class', 'fas fa-play');
+                                audio.pause();
+                        // Autoplay was prevented.
+                        // Show a "Play" button so that user can start playback.
+                    });
+                }
             }
 
             albumName.text(currAlbum);
@@ -232,6 +245,7 @@ $(function() {
             bgArtwork.css({
                 'background-image': 'url(' + bgArtworkUrl + ')'
             });
+
         } else {
             if (flag == 0 || flag == 1)
                 --currIndex;
@@ -245,7 +259,6 @@ $(function() {
         audio.addEventListener("ended", function() {
             selectTrack(1);
         });
-
         selectTrack(0);
 
         audio.loop = false;
@@ -278,13 +291,28 @@ $(function() {
         selectTrack(-1);
     });
 
+    initPlayer();
+
     $(window).keypress(function(e) {
         if (e.which == 32) {
             playPause();
             return false;
         }
         return true;
-      });
+    });
 
-    initPlayer();
+    function isHas(data, key) {
+        if (data.indexOf(key) != -1) {
+          return true;
+        }
+        return false;
+    }
+
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    if(isHas(url_string,'song=')){
+        var songID = url.searchParams.get("song");
+        currIndex = songID;
+        selectTrack(-1);
+    }
 });
