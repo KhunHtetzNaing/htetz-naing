@@ -67,7 +67,7 @@ div{
     top: 0;
     right: 15px;
     left: 15px;
-    padding: 13px 22px 10px 184px;
+    padding: 13px 22px 10px 160px;
     background-color: #fff7f7;
     border-radius: 15px 15px 0 0;
     transition: 0.3s ease top;
@@ -395,6 +395,7 @@ li:hover {
     font-size: 13px;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 2px;
 }
 
 .play-list .songs-info .song-title {

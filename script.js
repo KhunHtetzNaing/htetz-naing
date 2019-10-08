@@ -16,14 +16,17 @@ $(function() {
         seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0,
         buffInterval = null,
         tFlag = false,
-        albums = ['ခမ်း', 'နန်းလွဉ်ငါႏ', 'ကေႏနပ်ဒျာႏ', 'ရက်သွꩻမူး', 'ရက်တဖဲ့ꩻသား'],
-        trackNames = ['ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ', 'ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်'],
-        albumArtworks = ['_1', '_2', '_3', '_4', '_5'],
-        trackUrl = ['https://4utest.sgp1.digitaloceanspaces.com/PaOhMusic/Kham%20-%20Khun%20Htetz%20Naing%20Ft%20Khun%20Moung.mp3', 
-                    'https://4utest.sgp1.digitaloceanspaces.com/PaOhMusic/Nann%20Leon%20Ngar.mp3', 
-                    'https://4utest.sgp1.digitaloceanspaces.com/PaOhMusic/Kyay%20Nat%20Dyar%20-%202%20By%20Khun%20Htetz%20Naing.mp3', 
-                    'https://4utest.sgp1.digitaloceanspaces.com/PaOhMusic/Rak%20Swa%20Mu.mp3', 
-                    'https://4utest.sgp1.digitaloceanspaces.com/PaOhMusic/Rak%20Ta%20Phae%20Sar%20-%20NEW.mp3'],
+        albums = ['ခမ်း', 'နာꩻယူႏဖေႏဗဲင်း', 'ရက်လဲဉ်းနာꩻ', 'ကေႏနပ်ဒျာႏ', 'ရက်တဖဲ့ꩻသား', 'ခံႏဖတဝ်း', 'ရက်သွꩻမူႏ', 'ရက်လဲဉ်းနာꩻ  (၂) Demo', 'လွိုလဲဉ်း"သွꩻ"တဖြာꩻ', 'နန်းလွဉ်ꩻငါႏ', 'ပြန်လှည့်လာပေးပါ'],
+        trackNames = ['ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ', 'ခွန်ဆောင်းဖေး၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်၊ နင်ႏခမ်းဟေမာန်', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး', 'ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ', 'ဟန်ထက်၊ ခွန်ဝေယံစိုး၊ ခွန်ထက်နိုင်'],
+        albumArtworks = ['_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11'],
+        trackUrl = ['./src/audio/Kham - Khun Htetz Naing Ft Khun Moung.mp3',
+            './src/audio/Nar Yue Phay Bai.mp3',
+            './src/audio/Rak Lein Nar.mp3',
+            './src/audio/Kyay Nat Dyar - 2 By Khun Htetz Naing.mp3',
+            './src/audio/Rak Ta Phae Sar - NEW.mp3',
+            './src/audio/KhamPhaTao_KhunHtetzNaing_ft_NangKhamHayMhan.mp3',
+            './src/audio/Rak Swa Mu.mp3', './src/audio/Rak Lein Nar - 2.mp3', './src/audio/Lo Lein Swa Ta Phyar.mp3', './src/audio/Nann Leon Ngar.mp3', './src/audio/Pyan Lae Lar Pay Par - Han Htet - Wai Yan Soe - Khun Htetz Naing.mp3'
+        ],
         playPreviousTrackButton = $('#play-previous'),
         playNextTrackButton = $('#play-next'),
         downloadButton = $('#download'),
@@ -49,15 +52,15 @@ $(function() {
     }
 
     $.each(trackUrl, function(key, value) {
-        var img = 1+key;
-        $('.play-list').append(`<li id="`+img+`"><div class="play">
+        var img = 1 + key;
+        $('.play-list').append(`<li id="` + img + `"><div class="play">
         <div class="album-thumb pull-left">
-            <img src="`+$('#_'+img).attr('src')+`">
+            <img src="` + $('#_' + img).attr('src') + `">
         </div>
         <div class="songs-info pull-left">
-            <div class="song-title">`+albums[key]+`</div>
+            <div class="song-title">` + albums[key] + `</div>
             <div class="songs-detail">
-                <span class="song-artist">`+trackNames[key]+`</span>
+                <span class="song-artist">` + trackNames[key] + `</span>
             </div>
         </div>
     </div></li>`);
@@ -185,7 +188,7 @@ $(function() {
             ++currIndex;
         else
             --currIndex;
-            
+
         if ((currIndex > -1) && (currIndex < trackUrl.length)) {
             if (flag == 0)
                 i.attr('class', 'fa fa-play');
@@ -222,8 +225,8 @@ $(function() {
             trackName.text(currTrackName);
             albumArt.find('img.active').removeClass('active');
             $('#' + currArtwork).addClass('active');
-            $(document).prop('title','🎵 '+currAlbum+' - '+currTrackName);
-            $('link[rel="shortcut icon"]').attr('href', $('#'+currArtwork).attr('src'));
+            $(document).prop('title', '🎵 ' + currAlbum + ' - ' + currTrackName);
+            $('link[rel="shortcut icon"]').attr('href', $('#' + currArtwork).attr('src'));
             bgArtworkUrl = $('#' + currArtwork).attr('src');
 
             bgArtwork.css({
@@ -239,9 +242,9 @@ $(function() {
 
     function initPlayer() {
         audio = new Audio();
-        audio.addEventListener("ended", function(){
+        audio.addEventListener("ended", function() {
             selectTrack(1);
-       });
+        });
 
         selectTrack(0);
 
@@ -265,16 +268,16 @@ $(function() {
         playNextTrackButton.on('click', function() {
             selectTrack(1);
         });
-        downloadButton.on('click',function(){
+        downloadButton.on('click', function() {
             window.open(trackUrl[currIndex]);
         })
     }
 
-    $('ol.play-list li').click(function(e) { 
+    $('ol.play-list li').click(function(e) {
         currIndex = this.id;
         selectTrack(-1);
     })
 
-    
+
     initPlayer();
 });
