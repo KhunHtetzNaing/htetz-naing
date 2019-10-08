@@ -223,6 +223,7 @@ $(function() {
             albumArt.find('img.active').removeClass('active');
             $('#' + currArtwork).addClass('active');
             $(document).prop('title','🎵 '+currAlbum+' - '+currTrackName);
+            $('link[rel="shortcut icon"]').attr('href', currArtwork);
             bgArtworkUrl = $('#' + currArtwork).attr('src');
 
             bgArtwork.css({
