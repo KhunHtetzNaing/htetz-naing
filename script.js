@@ -276,8 +276,15 @@ $(function() {
     $('ol.play-list li').click(function(e) {
         currIndex = this.id;
         selectTrack(-1);
-    })
+    });
 
+    $(window).keypress(function(e) {
+        if (e.which == 32) {
+            playPause();
+            return false;
+        }
+        return true;
+      });
 
     initPlayer();
 });
