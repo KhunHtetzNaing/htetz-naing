@@ -311,6 +311,7 @@ $(function() {
     var url_string = window.location.href;
     var url = new URL(url_string);
     if(isHas(url_string,'song=')){
+        console.log('has parameter');
         var songID = url.searchParams.get("song");
         currIndex = songID;
         selectTrack(-1);

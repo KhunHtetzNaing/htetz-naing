@@ -14,8 +14,7 @@ div{
     font-family:'MON3 Anonta 1'!important;
 }
 
-#app-cover
-{
+#app-cover{
     padding: 10px;
     position: absolute;
     top: 20%;
@@ -24,6 +23,15 @@ div{
     width: 430px;
     height: 100px;
     margin: -4px auto;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #app-cover { width:67%; }
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #app-cover { width:95%; }
 }
 
 #bg-artwork
