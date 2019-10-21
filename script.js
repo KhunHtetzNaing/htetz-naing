@@ -16,17 +16,80 @@ $(function() {
         seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0,
         buffInterval = null,
         tFlag = false,
-        albums = ['ရက်လဲဉ်းနာꩻ (၂)', 'နာꩻယူႏဖေႏဗဲင်း', 'ရက်လဲဉ်းနာꩻ', 'ကေႏနပ်ဒျာႏ', 'ရက်တဖဲ့ꩻသား', 'ခံႏဖတဝ်း', 'ရက်သွꩻမူႏ', 'ရက်လဲဉ်းနာꩻ  (၂) Demo', 'လွိုလဲဉ်း"သွꩻ"တဖြာꩻ', 'နန်းလွဉ်ꩻငါႏ', 'ပြန်လှည့်လာပေးပါ','ခမ်း'],
-        trackNames = ['ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး', 'ခွန်ဆောင်းဖေး၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်','ခွန်ထက်နိုင်၊ နင်ႏခမ်းဟေမာန်',  'ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး', 'ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်', 'ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ', 'ဟန်ထက်၊ ခွန်ဝေယံစိုး၊ ခွန်ထက်နိုင်','ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ'],
-        albumArtworks = ['_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10', '_11'],
-        trackUrl = ['./src/audio/Rak Lein Nar 2 - Khun Htetz Naing - Khun Moung - Khun Wai Yan Soe.mp3',
-            './src/audio/Nar Yue Phay Bai.mp3',
-            './src/audio/Rak Lein Nar.mp3',
-            './src/audio/Kyay Nat Dyar - 2 By Khun Htetz Naing.mp3',
-            './src/audio/Rak Ta Phae Sar - NEW.mp3',
-            './src/audio/KhamPhaTao_KhunHtetzNaing_ft_NangKhamHayMhan.mp3',
-            './src/audio/Rak Swa Mu.mp3', './src/audio/Rak Lein Nar - 2.mp3', './src/audio/Lo Lein Swa Ta Phyar.mp3', './src/audio/Nann Leon Ngar.mp3', './src/audio/Pyan Lae Lar Pay Par - Han Htet - Wai Yan Soe - Khun Htetz Naing.mp3','./src/audio/Kham - Khun Htetz Naing Ft Khun Moung.mp3'
-        ],
+        songs = [
+            {
+              "img": "./src/img/RakLeinNar2_FINAL.png",
+              "audio": "./src/audio/Rak Lein Nar 2 - Khun Htetz Naing - Khun Moung - Khun Wai Yan Soe.mp3",
+              "title": "ရက်လဲဉ်းနာꩻ (၂)",
+              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး"
+            },
+            {
+              "img": "./src/img/kham.png",
+              "audio": "./src/audio/Kham - Khun Htetz Naing Ft Khun Moung.mp3",
+              "title": "ခမ်း",
+              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
+            },
+            {
+              "img": "./src/img/nar_yue_phay_bai.png",
+              "audio": "./src/audio/Nar Yue Phay Bai.mp3",
+              "title": "နာꩻယူႏဖေႏဗဲင်း",
+              "artists": "ခွန်ဆောင်းဖေး၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
+            },
+            {
+              "img": "./src/img/rak_lein_nar.jpg",
+              "audio": "./src/audio/Rak Lein Nar.mp3",
+              "title": "ရက်လဲဉ်းနာꩻ",
+              "artists": "ခွန်ထက်နိုင်"
+            },
+            {
+              "img": "./src/img/kyay_nat_dyar.jpg",
+              "audio": "./src/audio/Kyay Nat Dyar - 2 By Khun Htetz Naing.mp3",
+              "title": "ကေႏနပ်ဒျာႏ",
+              "artists": "ခွန်ထက်နိုင်"
+            },
+            {
+              "img": "./src/img/rak-ta-phae-sar.jpg",
+              "audio": "./src/audio/Rak Ta Phae Sar - NEW.mp3",
+              "title": "ရက်တဖဲ့ꩻသား",
+              "artists": "ခွန်ထက်နိုင်"
+            },
+            {
+              "img": "./src/img/kham_pa_tao.jpg",
+              "audio": "./src/audio/KhamPhaTao_KhunHtetzNaing_ft_NangKhamHayMhan.mp3",
+              "title": "ခံႏဖတဝ်း",
+              "artists": "ခွန်ထက်နိုင်၊ နင်ႏခမ်းဟေမာန်"
+            },
+            {
+              "img": "./src/img/raw-swa-mu.png",
+              "audio": "./src/audio/Rak Swa Mu.mp3",
+              "title": "ရက်သွꩻမူႏ",
+              "artists": "ခွန်ထက်နိုင်"
+            },
+            {
+              "img": "./src/img/rak-lein-nar2.png",
+              "audio": "./src/audio/Rak Lein Nar - 2.mp3",
+              "title": "ရက်လဲဉ်းနာꩻ  (၂) Demo",
+              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး"
+            },
+            {
+              "img": "./src/img/lo_lein_swa_ta_phyar.jpg",
+              "audio": "./src/audio/Lo Lein Swa Ta Phyar.mp3",
+              "title": "လွိုလဲဉ်း\"သွꩻ\"တဖြာꩻ",
+              "artists": "ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်"
+            },
+            {
+              "img": "./src/img/nann_leon_ngar.jpg",
+              "audio": "./src/audio/Nann Leon Ngar.mp3",
+              "title": "နန်းလွဉ်ꩻငါႏ",
+              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
+            },
+            {
+              "img": "./src/img/pyan_lae_lar_pay_par.png",
+              "audio": "./src/audio/Pyan Lae Lar Pay Par - Han Htet - Wai Yan Soe - Khun Htetz Naing.mp3",
+              "title": "ပြန်လှည့်လာပေးပါ",
+              "artists": "ဟန်ထက်၊ ခွန်ဝေယံစိုး Ft ခွန်ထက်နိုင်"
+            }
+          ],
         playPreviousTrackButton = $('#play-previous'),
         playNextTrackButton = $('#play-next'),
         downloadButton = $('#download'),
@@ -51,16 +114,19 @@ $(function() {
         }, 300);
     }
 
-    $.each(trackUrl, function(key, value) {
+    $.each(songs, function(key, value) {
         var img = 1 + key;
+
+        $('#album-art').append(`<img src="` + songs[key].img + `" class="active" id="_`+img+`">`);
+
         $('.play-list').append(`<li id="` + img + `"><div class="play">
         <div class="album-thumb pull-left">
-            <img src="` + $('#_' + img).attr('src') + `">
+            <img src="` + songs[key].img + `">
         </div>
         <div class="songs-info pull-left">
-            <div class="song-title">` + albums[key] + `</div>
+            <div class="song-title">` + songs[key].title + `</div>
             <div class="songs-detail">
-                <span class="song-artist">` + trackNames[key] + `</span>
+                <span class="song-artist">` + songs[key].artists + `</span>
             </div>
         </div>
     </div></li>`);
@@ -189,7 +255,7 @@ $(function() {
         else
             --currIndex;
 
-        if ((currIndex > -1) && (currIndex < trackUrl.length)) {
+        if ((currIndex > -1) && (currIndex < songs.length)) {
             if (flag == 0)
                 i.attr('class', 'fa fa-play');
             else {
@@ -202,11 +268,11 @@ $(function() {
             tProgress.text('00:00');
             tTime.text('00:00');
 
-            currAlbum = albums[currIndex];
-            currTrackName = trackNames[currIndex];
-            currArtwork = albumArtworks[currIndex];
+            currTitle = songs[currIndex].title;
+            currArtist = songs[currIndex].artists;
+            currArtwork = 1+currIndex;
 
-            audio.src = trackUrl[currIndex];
+            audio.src = songs[currIndex].audio;
 
             nTime = 0;
             bTime = new Date();
@@ -234,14 +300,13 @@ $(function() {
                 }
             }
 
-            albumName.text(currAlbum);
-            trackName.text(currTrackName);
+            albumName.text(currTitle);
+            trackName.text(currArtist);
             albumArt.find('img.active').removeClass('active');
-            $('#' + currArtwork).addClass('active');
-            $(document).prop('title', '🎵 ' + currAlbum + ' - ' + currTrackName);
-            $('link[rel="shortcut icon"]').attr('href', $('#' + currArtwork).attr('src'));
-            bgArtworkUrl = $('#' + currArtwork).attr('src');
-
+            $('#_' + currArtwork).addClass('active');
+            $(document).prop('title', '🎵 ' + currTitle + ' - ' + currArtist);
+            $('link[rel="shortcut icon"]').attr('href', songs[currIndex].img);
+            bgArtworkUrl = songs[currIndex].img;
             bgArtwork.css({
                 'background-image': 'url(' + bgArtworkUrl + ')'
             });
@@ -282,7 +347,7 @@ $(function() {
             selectTrack(1);
         });
         downloadButton.on('click', function() {
-            window.open(trackUrl[currIndex]);
+            window.open(songs[currIndex].audio);
         })
     }
 
