@@ -18,6 +18,12 @@ $(function() {
         tFlag = false,
         songs = [
             {
+                "img": "./src/img/AChaiSutNeZatRan.jpg",
+                "audio": "./src/audio/A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp3",
+                "title": "အဆုဲင်ꩻသွတ်နီဇာတ်ရဲဉ်ႏ",
+                "artists": "ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း"
+              },
+            {
               "img": "./src/img/RakLeinNar2_FINAL.png",
               "audio": "./src/audio/Rak Lein Nar 2 - Khun Htetz Naing - Khun Moung - Khun Wai Yan Soe.mp3",
               "title": "ရက်လဲဉ်းနာꩻ (၂)",
