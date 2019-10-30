@@ -18,6 +18,12 @@ $(function() {
         tFlag = false,
         songs = [
             {
+                "img": "./src/img/tam-pho.jpg",
+                "audio": "./src/audio/Tam Pho - Khun Lao Rak X Khun Htetz Naing X Khun Moung.mp3",
+                "title": "တန်ႏဖိုꩻ",
+                "artists": "ခွန်လဝ်းရက်၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
+              },
+            {
                 "img": "./src/img/AChaiSutNeZatRan.jpg",
                 "audio": "./src/audio/A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp3",
                 "title": "အဆုဲင်ꩻသွတ်နီဇာတ်ရဲဉ်ႏ",
@@ -92,7 +98,7 @@ $(function() {
             {
               "img": "./src/img/pyan_lae_lar_pay_par.png",
               "audio": "./src/audio/Pyan Lae Lar Pay Par - Han Htet - Wai Yan Soe - Khun Htetz Naing.mp3",
-              "title": "ပြန်လှည့်လာပေးပါ",
+              "title": "ပြန်လှည့်လာပေးပါ",
               "artists": "ဟန်ထက်၊ ခွန်ဝေယံစိုး Ft ခွန်ထက်နိုင်"
             }
           ],
