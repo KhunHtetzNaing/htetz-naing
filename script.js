@@ -18,6 +18,12 @@ $(function() {
         tFlag = false,
         songs = [
             {
+                "img": "./src/img/YamSayNar.jpg",
+                "audio": "./src/audio/Yam Say Nar - Htetz Naing X Tun Lwin.mp3",
+                "title": "ယံသေနာႏ",
+                "artists": "ခွန်ထွန်းလွင်၊ ခွန်ထက်နိုင်"
+              },
+            {
                 "img": "./src/img/tam-pho.jpg",
                 "audio": "./src/audio/Tam Pho - Khun Lao Rak X Khun Htetz Naing X Khun Moung.mp3",
                 "title": "တန်ႏဖိုꩻ",
