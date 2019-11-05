@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     var playerTrack = $("#player-track"),
         bgArtwork = $('#bg-artwork'),
         bgArtworkUrl, albumName = $('#album-name'),
@@ -21,100 +21,130 @@ $(function() {
                 "img": "./src/img/YamSayNar.jpg",
                 "audio": "./src/audio/Yam Say Nar - Htetz Naing X Tun Lwin.mp3",
                 "title": "ယံသေနာႏ",
-                "artists": "ခွန်ထွန်းလွင်၊ ခွန်ထက်နိုင်"
-              },
+                "artists": "ခွန်ထွန်းလွင်၊ ခွန်ထက်နိုင်",
+                "youtube": "piQ4-BaRqmM",
+                "video": "./src/video/YamSayNar - Khun Htetz Naing X Khun Tun Lwin.mp4"
+            },
             {
                 "img": "./src/img/tam-pho.jpg",
                 "audio": "./src/audio/Tam Pho - Khun Lao Rak X Khun Htetz Naing X Khun Moung.mp3",
                 "title": "တန်ႏဖိုꩻ",
-                "artists": "ခွန်လဝ်းရက်၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
-              },
+                "artists": "ခွန်လဝ်းရက်၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
+                "youtube": "R_qEAThSh3I",
+                "video": "./src/video/TamPho - Khun Lao Rak X Khun Htetz Naing X Khun Moung.mp4"
+            },
             {
                 "img": "./src/img/AChaiSutNeZatRan.jpg",
                 "audio": "./src/audio/A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp3",
                 "title": "အဆုဲင်ꩻသွတ်နီဇာတ်ရဲဉ်ႏ",
-                "artists": "ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း"
-              },
-            {
-              "img": "./src/img/RakLeinNar2_FINAL.png",
-              "audio": "./src/audio/Rak Lein Nar 2 - Khun Htetz Naing - Khun Moung - Khun Wai Yan Soe.mp3",
-              "title": "ရက်လဲဉ်းနာꩻ (၂)",
-              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး"
+                "artists": "ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း",
+                "youtube": "HLWLzR48cxA",
+                "video": "./src/video/AChaiSwutNeeZatRan - Khun Htetz Naing X Nang Cherry Win.mp4"
             },
             {
-              "img": "./src/img/kham.png",
-              "audio": "./src/audio/Kham - Khun Htetz Naing Ft Khun Moung.mp3",
-              "title": "ခမ်း",
-              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
+                "img": "./src/img/RakLeinNar2_FINAL.png",
+                "audio": "./src/audio/Rak Lein Nar 2 - Khun Htetz Naing - Khun Moung - Khun Wai Yan Soe.mp3",
+                "title": "ရက်လဲဉ်းနာꩻ (၂)",
+                "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး",
+                "youtube": "Axu4DcLMxLE",
+                "video": "./src/video/RakLeinNar2 - Khun Htetz Naing X Khun Moung X Khun Wai Yan Soe.mp4"
             },
             {
-              "img": "./src/img/nar_yue_phay_bai.png",
-              "audio": "./src/audio/Nar Yue Phay Bai.mp3",
-              "title": "နာꩻယူႏဖေႏဗဲင်း",
-              "artists": "ခွန်ဆောင်းဖေး၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
+                "img": "./src/img/kham.png",
+                "audio": "./src/audio/Kham - Khun Htetz Naing Ft Khun Moung.mp3",
+                "title": "ခမ်း",
+                "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
+                "youtube": "IhJk273Kgoc",
+                "video": "./src/video/Kham - Khun Htetz Naing X Khun Moung.mp4"
             },
             {
-              "img": "./src/img/rak_lein_nar.jpg",
-              "audio": "./src/audio/Rak Lein Nar.mp3",
-              "title": "ရက်လဲဉ်းနာꩻ",
-              "artists": "ခွန်ထက်နိုင်"
+                "img": "./src/img/nar_yue_phay_bai.png",
+                "audio": "./src/audio/Nar Yue Phay Bai.mp3",
+                "title": "နာꩻယူႏဖေႏဗဲင်း",
+                "artists": "ခွန်ဆောင်းဖေး၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
+                "youtube": "1`kAMfi2uU_MU",
+                "video": "./src/video/NarYuePhayBai - Khun Soung Phay X Khun Htetz Naing X Khun Moung.mp4"
             },
             {
-              "img": "./src/img/kyay_nat_dyar.jpg",
-              "audio": "./src/audio/Kyay Nat Dyar - 2 By Khun Htetz Naing.mp3",
-              "title": "ကေႏနပ်ဒျာႏ",
-              "artists": "ခွန်ထက်နိုင်"
+                "img": "./src/img/rak_lein_nar.jpg",
+                "audio": "./src/audio/Rak Lein Nar.mp3",
+                "title": "ရက်လဲဉ်းနာꩻ",
+                "artists": "ခွန်ထက်နိုင်",
+                "youtube": "-0M4Rw5tV1I",
+                "video": "./src/video/RakLeinNar - Khun Htetz Naing.mp4"
             },
             {
-              "img": "./src/img/rak-ta-phae-sar.jpg",
-              "audio": "./src/audio/Rak Ta Phae Sar - NEW.mp3",
-              "title": "ရက်တဖဲ့ꩻသား",
-              "artists": "ခွန်ထက်နိုင်"
+                "img": "./src/img/kyay_nat_dyar.jpg",
+                "audio": "./src/audio/Kyay Nat Dyar - 2 By Khun Htetz Naing.mp3",
+                "title": "ကေႏနပ်ဒျာႏ",
+                "artists": "ခွန်ထက်နိုင်",
+                "youtube": "3AP0b1VEJ9U",
+                "video": "./src/video/KayNatDyar - Khun Htetz Naing.mp4"
             },
             {
-              "img": "./src/img/kham_pa_tao.jpg",
-              "audio": "./src/audio/KhamPhaTao_KhunHtetzNaing_ft_NangKhamHayMhan.mp3",
-              "title": "ခံႏဖတဝ်း",
-              "artists": "ခွန်ထက်နိုင်၊ နင်ႏခမ်းဟေမာန်"
+                "img": "./src/img/rak-ta-phae-sar.jpg",
+                "audio": "./src/audio/Rak Ta Phae Sar - NEW.mp3",
+                "title": "ရက်တဖဲ့ꩻသား",
+                "artists": "ခွန်ထက်နိုင်",
+                "youtube": "VLlQ-jI0QVM",
+                "video": "./src/video/Rak Ta Phae Sar - Khun Htetz Naing.mp4"
             },
             {
-              "img": "./src/img/raw-swa-mu.png",
-              "audio": "./src/audio/Rak Swa Mu.mp3",
-              "title": "ရက်သွꩻမူႏ",
-              "artists": "ခွန်ထက်နိုင်"
+                "img": "./src/img/kham_pa_tao.jpg",
+                "audio": "./src/audio/KhamPhaTao_KhunHtetzNaing_ft_NangKhamHayMhan.mp3",
+                "title": "ခံႏဖတဝ်း",
+                "artists": "ခွန်ထက်နိုင်၊ နင်ႏခမ်းဟေမာန်",
+                "youtube": "nlPP9cV6Y34",
+                "video": "./src/video/Kham Pha Tao - Khun Htetz Naing X Nang Kham Hay Mhan.mp4"
             },
             {
-              "img": "./src/img/rak-lein-nar2.png",
-              "audio": "./src/audio/Rak Lein Nar - 2.mp3",
-              "title": "ရက်လဲဉ်းနာꩻ  (၂) Demo",
-              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး"
+                "img": "./src/img/raw-swa-mu.png",
+                "audio": "./src/audio/Rak Swa Mu.mp3",
+                "title": "ရက်သွꩻမူႏ",
+                "artists": "ခွန်ထက်နိုင်",
+                "youtube": "Q1ogNwa3Fkg",
+                "video": "./src/video/Rak Swa Mu - Khun Htetz Naing.mp4"
             },
             {
-              "img": "./src/img/lo_lein_swa_ta_phyar.jpg",
-              "audio": "./src/audio/Lo Lein Swa Ta Phyar.mp3",
-              "title": "လွိုလဲဉ်း\"သွꩻ\"တဖြာꩻ",
-              "artists": "ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်"
+                "img": "./src/img/rak-lein-nar2.png",
+                "audio": "./src/audio/Rak Lein Nar - 2.mp3",
+                "title": "ရက်လဲဉ်းနာꩻ  (၂) Demo",
+                "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး",
+                "youtube": "RXKlT8pj2x4",
+                "video": "./src/video/RakLeinNar2DEMO- Khun Htetz Naing X Khun Moung X Khun Wai Yan Soe.mp4"
             },
             {
-              "img": "./src/img/nann_leon_ngar.jpg",
-              "audio": "./src/audio/Nann Leon Ngar.mp3",
-              "title": "နန်းလွဉ်ꩻငါႏ",
-              "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ"
+                "img": "./src/img/lo_lein_swa_ta_phyar.jpg",
+                "audio": "./src/audio/Lo Lein Swa Ta Phyar.mp3",
+                "title": "လွိုလဲဉ်း\"သွꩻ\"တဖြာꩻ",
+                "artists": "ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်",
+                "youtube": "qQs8eB5C_UE",
+                "video": "./src/video/LoLeinSwaTaPhyar - Khun Phoe Thar X Khun Htetz Naing.mp4"
             },
             {
-              "img": "./src/img/pyan_lae_lar_pay_par.png",
-              "audio": "./src/audio/Pyan Lae Lar Pay Par - Han Htet - Wai Yan Soe - Khun Htetz Naing.mp3",
-              "title": "ပြန်လှည့်လာပေးပါ",
-              "artists": "ဟန်ထက်၊ ခွန်ဝေယံစိုး Ft ခွန်ထက်နိုင်"
+                "img": "./src/img/nann_leon_ngar.jpg",
+                "audio": "./src/audio/Nann Leon Ngar.mp3",
+                "title": "နန်းလွဉ်ꩻငါႏ",
+                "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
+                "youtube": "dL3SWukakaY",
+                "video": "./src/video/NannLeonNgar - Khun Htetz Naing X Khun Moung.mp4"
+            },
+            {
+                "img": "./src/img/pyan_lae_lar_pay_par.png",
+                "audio": "./src/audio/Pyan Lae Lar Pay Par - Han Htet - Wai Yan Soe - Khun Htetz Naing.mp3",
+                "title": "ပြန်လှည့်လာပေးပါ",
+                "artists": "ဟန်ထက်၊ ခွန်ဝေယံစိုး Ft ခွန်ထက်နိုင်",
+                "youtube": "2cVyVGs0MJA",
+                "video": "https://www.youtube.com/watch?v=2cVyVGs0MJA"
             }
-          ],
+        ],
         playPreviousTrackButton = $('#play-previous'),
         playNextTrackButton = $('#play-next'),
         downloadButton = $('#download'),
         currIndex = -1;
 
     function playPause() {
-        setTimeout(function() {
+        setTimeout(function () {
             if (audio.paused) {
                 playerTrack.addClass('active');
                 albumArt.addClass('active');
@@ -132,10 +162,10 @@ $(function() {
         }, 300);
     }
 
-    $.each(songs, function(key, value) {
+    $.each(songs, function (key, value) {
         var img = 1 + key;
 
-        $('#album-art').append(`<img src="` + songs[key].img + `" class="active" id="_`+img+`">`);
+        $('#album-art').append(`<img src="` + songs[key].img + `" class="active" id="_` + img + `">`);
 
         $('.play-list').append(`<li id="` + img + `"><div class="play">
         <div class="album-thumb pull-left">
@@ -255,7 +285,7 @@ $(function() {
 
     function checkBuffering() {
         clearInterval(buffInterval);
-        buffInterval = setInterval(function() {
+        buffInterval = setInterval(function () {
             if ((nTime == 0) || (bTime - nTime) > 1000)
                 albumArt.addClass('buffering');
             else
@@ -288,7 +318,7 @@ $(function() {
 
             currTitle = songs[currIndex].title;
             currArtist = songs[currIndex].artists;
-            currArtwork = 1+currIndex;
+            currArtwork = 1 + currIndex;
 
             audio.src = songs[currIndex].audio;
 
@@ -305,13 +335,13 @@ $(function() {
                         albumArt.addClass('active');
                         clearInterval(buffInterval);
                         checkBuffering();
-                            }).catch(error => {
-                                playerTrack.removeClass('active');
-                                albumArt.removeClass('active');
-                                clearInterval(buffInterval);
-                                albumArt.removeClass('buffering');
-                                i.attr('class', 'fas fa-play');
-                                audio.pause();
+                    }).catch(error => {
+                        playerTrack.removeClass('active');
+                        albumArt.removeClass('active');
+                        clearInterval(buffInterval);
+                        albumArt.removeClass('buffering');
+                        i.attr('class', 'fas fa-play');
+                        audio.pause();
                         // Autoplay was prevented.
                         // Show a "Play" button so that user can start playback.
                     });
@@ -339,7 +369,7 @@ $(function() {
 
     function initPlayer() {
         audio = new Audio();
-        audio.addEventListener("ended", function() {
+        audio.addEventListener("ended", function () {
             selectTrack(1);
         });
         selectTrack(0);
@@ -348,7 +378,7 @@ $(function() {
 
         playPauseButton.on('click', playPause);
 
-        sArea.mousemove(function(event) {
+        sArea.mousemove(function (event) {
             showHover(event);
         });
 
@@ -358,42 +388,102 @@ $(function() {
 
         $(audio).on('timeupdate', updateCurrTime);
 
-        playPreviousTrackButton.on('click', function() {
+        playPreviousTrackButton.on('click', function () {
             selectTrack(-1);
         });
-        playNextTrackButton.on('click', function() {
+        playNextTrackButton.on('click', function () {
             selectTrack(1);
         });
-        downloadButton.on('click', function() {
-            window.open(songs[currIndex].audio);
+        downloadButton.on('click', function () {
+            downloadDialog(currIndex);
         })
     }
 
-    $('ol.play-list li').click(function(e) {
+    $('ol.play-list li').click(function (e) {
         currIndex = this.id;
         selectTrack(-1);
     });
 
     initPlayer();
 
-    $(window).keypress(function(e) {
+    //Control from keyboard
+    $(window).keypress(function (e) {
         if (e.which == 32) {
+            //Play Pause
             playPause();
             return false;
         }
         return true;
     });
 
+    document.onkeydown = checkKey;
+
+    function checkKey(e) {
+        e = e || window.event;
+        if (e.keyCode == '38') {
+            // up arrow
+        }
+        else if (e.keyCode == '40') {
+            // down arrow
+        }
+        else if (e.keyCode == '37') {
+            // left arrow
+            selectTrack(-1);
+        }
+        else if (e.keyCode == '39') {
+            // right arrow
+            selectTrack(1);
+        }
+
+    }
+
+    //End control from keyboard
+
+    function downloadDialog(e) {
+        Swal.fire({
+            title: 'ဒေါင်းချင်တာကိုနှိပ်ပါ!',
+            icon: 'info',
+            html:
+                '<div class="embed-container"><iframe src="https://www.youtube.com/embed//' + songs[e].youtube + '" frameborder="0" allowfullscreen></iframe></div>',
+            showCloseButton: true,
+            showCancelButton: true,
+            focusConfirm: true,
+            confirmButtonText:
+                'MP3',
+            cancelButtonText:
+                'MP4'
+        }).then((result) => {
+            if (result.value) {
+                //MP3 Download
+                downloadMe(songs[e].audio);
+                downloadDialog(e);
+            } else if (result.dismiss == 'cancel') {
+                //MP4 Download
+                downloadMe('https://y2mate.com/youtube/'+songs[e].youtube);
+                downloadDialog(e);
+            }
+        })
+    }
+
+    function downloadMe(href) {
+        var anchor = document.createElement('a');
+        anchor.href = href;
+        anchor.download = decodeURI(href.substring(href.lastIndexOf('/') + 1));
+        anchor.target = '_blank';
+        document.body.appendChild(anchor);
+        anchor.click();
+    }
+
     function isHas(data, key) {
         if (data.indexOf(key) != -1) {
-          return true;
+            return true;
         }
         return false;
     }
 
     var url_string = window.location.href;
     var url = new URL(url_string);
-    if(isHas(url_string,'song=')){
+    if (isHas(url_string, 'song=')) {
         console.log('has parameter');
         var songID = url.searchParams.get("song");
         currIndex = songID;
