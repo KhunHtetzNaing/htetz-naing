@@ -271,7 +271,7 @@ $(function () {
             else
                 ++currIndex;
         }
-        changeUrlNoReload('?id=' + currYoutube);
+        changeUrlNoReload('?id=' + currYoutube+'.html');
     }
 
     function initPlayer() {
@@ -387,11 +387,21 @@ $(function () {
         return false;
     }
 
-    var url_string = window.location.href;
-    var url = new URL(url_string);
-    if (isHas(url_string, 'id=')) {
-        var songName = url.searchParams.get("id");
-        currIndex = 1+getSongIdByName(songName);
+    function isHasParameter(){
+        var path = window.location.pathname;
+        if(path.indexOf('/') != -1){
+	        path = path.replace(/\//g, '');
+        }
+        if(path!=''){
+            return path;
+        }else{
+            return null;
+        }
+    }
+
+    var songName = isHasParameter();
+    if(songName!=null){
+        currIndex = 1+getSongIdByName(songName.replace(".html",""));
         selectTrack(currIndex);
     }else{
         selectTrack(0);
@@ -451,7 +461,7 @@ $(function () {
                 "audio": audioProtocol + "Nar Yue Phay Bai.mp3",
                 "title": "နာꩻယူႏဖေႏဗဲင်း",
                 "artists": "ခွန်ဆောင်းဖေး၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
-                "youtube": "1`kAMfi2uU_MU",
+                "youtube": "kAMfi2uU_MU",
                 "video": videoProtocol + "NarYuePhayBai - Khun Soung Phay X Khun Htetz Naing X Khun Moung.mp4"
             },
             {
