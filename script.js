@@ -203,6 +203,7 @@ $(function () {
             currTitle = songs[currIndex].title;
             currArtist = songs[currIndex].artists;
             currArtwork = 1 + currIndex;
+            currYoutube = songs[currIndex].youtube;
 
             audio.src = songs[currIndex].audio;
 
@@ -249,7 +250,7 @@ $(function () {
             else
                 ++currIndex;
         }
-        changeUrlNoReload('?song=' + currTitle);
+        changeUrlNoReload('?id=' + currYoutube);
     }
 
     function initPlayer() {
@@ -257,7 +258,6 @@ $(function () {
         audio.addEventListener("ended", function () {
             selectTrack(1);
         });
-        selectTrack(0);
 
         audio.loop = false;
 
@@ -368,11 +368,12 @@ $(function () {
 
     var url_string = window.location.href;
     var url = new URL(url_string);
-    if (isHas(url_string, 'song=')) {
-        var songName = url.searchParams.get("song");
-        currIndex = getSongIdByName(songName);
-        console.log('Fuck parameter: '+songName +' | '+getSongIdByName(songName));
+    if (isHas(url_string, 'id=')) {
+        var songName = url.searchParams.get("id");
+        currIndex = 1+getSongIdByName(songName);
         selectTrack(currIndex);
+    }else{
+        selectTrack(0);
     }
 
     function isOnline() {
@@ -521,7 +522,7 @@ $(function () {
     function getSongIdByName(title){
         var a = 0;
         songs.map(function(value,i){
-            if(value.title == title){
+            if(value.youtube == title){
                 a = i;
             }
         });
