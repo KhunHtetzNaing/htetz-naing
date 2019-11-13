@@ -271,7 +271,7 @@ $(function () {
             else
                 ++currIndex;
         }
-        changeUrlNoReload('?id=' + currYoutube+'.html');
+        changeUrlNoReload('?id=' + currYoutube);
     }
 
     function initPlayer() {
@@ -387,21 +387,11 @@ $(function () {
         return false;
     }
 
-    function isHasParameter(){
-        var path = window.location.pathname;
-        if(path.indexOf('/') != -1){
-	        path = path.replace(/\//g, '');
-        }
-        if(path!=''){
-            return path;
-        }else{
-            return null;
-        }
-    }
-
-    var songName = isHasParameter();
-    if(songName!=null){
-        currIndex = 1+getSongIdByName(songName.replace(".html",""));
+    var url_string = window.location.href;
+    var url = new URL(url_string);
+    if (isHas(url_string, 'id=')) {
+        var songName = url.searchParams.get("id");
+        currIndex = 1+getSongIdByName(songName);
         selectTrack(currIndex);
     }else{
         selectTrack(0);
