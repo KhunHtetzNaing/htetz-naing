@@ -237,8 +237,29 @@ $(function () {
             trackName.text(currArtist);
             albumArt.find('img.active').removeClass('active');
             $('#_' + currArtwork).addClass('active');
+
+            //Change Title
             $(document).prop('title', '🎵 ' + currTitle + ' - ' + currArtist);
+
+            //Change Favicon
             $('link[rel="shortcut icon"]').attr('href', songs[currIndex].img);
+
+            //Change Facebook/Twitter Title
+            $('meta[property="og:title"]').attr('content', currTitle);
+            $('meta[property="twitter:title"]').attr('content', currTitle);
+
+            //Change Facebook/Twitter Description
+            $('meta[property="og:description"]').attr('content', currArtist);
+            $('meta[property="twitter:description"]').attr('content', currArtist);
+
+            //Change Facebook/Twitter Image
+            $('meta[property="og:image"]').attr('content', songs[currIndex].img);
+            $('meta[property="twitter:image"]').attr('content', songs[currIndex].img);
+
+            //Change Facebook/Twitter URL
+            $('meta[property="og:url"]').attr('content', window.location.href);
+            $('meta[property="twitter:url"]').attr('content', window.location.href);
+
             bgArtworkUrl = songs[currIndex].img;
             bgArtwork.css({
                 'background-image': 'url(' + bgArtworkUrl + ')'
