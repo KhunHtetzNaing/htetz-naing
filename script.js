@@ -343,7 +343,7 @@ $(function () {
                 downloadDialog(e);
             } else if (result.dismiss == 'cancel') {
                 //MP4 Download
-                downloadMe('https://y2mate.com/youtube/'+songs[e].youtube);
+                downloadMe(songs[e].video);
                 downloadDialog(e);
             }
         })
