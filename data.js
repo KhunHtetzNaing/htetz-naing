@@ -1,6 +1,6 @@
     //OnlineTag
-    var imgOnline = 'https://rawcdn.githack.com/KhunHtetzNaing/htetz-naing/6c223402796c95b94502b2f49473cc6fe300d28c/src/img/',
-        audioOnline = 'https://rawcdn.githack.com/KhunHtetzNaing/htetz-naing/6c223402796c95b94502b2f49473cc6fe300d28c/src/audio/',
+    var imgOnline = 'https://rawcdn.githack.com/KhunHtetzNaing/htetz-naing/2549be56becfe668db9b0f57559d8c1eaecb0603/src/img/',
+        audioOnline = 'https://rawcdn.githack.com/KhunHtetzNaing/htetz-naing/2549be56becfe668db9b0f57559d8c1eaecb0603/src/audio/',
         videoOnline = 'https://glcdn.githack.com/KhunHtetzNaing/firstrepo/raw/master/';
         
 function isOnline() {
