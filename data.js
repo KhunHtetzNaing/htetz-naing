@@ -1,10 +1,10 @@
     //OnlineTag
-    var imgOnline = 'https://rawcdn.githack.com/KhunHtetzNaing/htetz-naing/2549be56becfe668db9b0f57559d8c1eaecb0603/src/img/',
-        audioOnline = 'https://rawcdn.githack.com/KhunHtetzNaing/htetz-naing/2549be56becfe668db9b0f57559d8c1eaecb0603/src/audio/',
-        videoOnline = 'https://glcdn.githack.com/KhunHtetzNaing/firstrepo/raw/master/';
+    var imgOnline = 'https://github.com/KhunHtetzNaing/htetz-naing/raw/master/src/img/',
+        audioOnline = 'https://github.com/KhunHtetzNaing/htetz-naing/raw/master/src/audio/',
+        videoOnline = 'https://gitlab.com/KhunHtetzNaing/firstrepo/raw/master/';
         
 function isOnline() {
-  return window.location.protocol == 'file:';
+  return window.location.protocol != 'file:';
 }
 
 function generateSong() {
