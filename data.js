@@ -4,7 +4,7 @@
         videoOnline = 'https://glcdn.githack.com/KhunHtetzNaing/firstrepo/raw/master/';
         
 function isOnline() {
-  return window.location.protocol != 'file:';
+  return window.location.protocol == 'file:';
 }
 
 function generateSong() {
