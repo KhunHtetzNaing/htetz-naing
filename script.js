@@ -288,6 +288,11 @@ $(function () {
             console.log( "ready!" );
             onYouTubeIframeAPIReady();
         });
+        if(songs[currIndex].hasOwnProperty("joox")){
+            joox.show(800);
+        }else{
+            joox.hide(800);
+        }
     }
 
     function initPlayer() {
