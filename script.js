@@ -284,7 +284,10 @@ $(function () {
         downloadMP3.attr('href',songs[currIndex].audio);
         downloadMP4.attr('href',songs[currIndex].video);
         changeUrlNoReload('?id=' + currYoutube);
-        onYouTubeIframeAPIReady();
+        $(document).ready( function() {
+            console.log( "ready!" );
+            onYouTubeIframeAPIReady();
+        });
     }
 
     function initPlayer() {
