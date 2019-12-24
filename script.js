@@ -21,7 +21,12 @@ $(function () {
         playPreviousTrackButton = $('#play-previous'),
         playNextTrackButton = $('#play-next'),
         downloadButton = $('#download'),
-        currIndex = -1;
+        currIndex = -1,
+        youtubeIframe = $('#yt'),
+        joox = $('.joox-container'),
+        downloadMP3 = $('#dl-mp3'),
+        downloadMP4 = $('#dl-mp4'),
+        ytplayer ={};
 
     function playPause() {
         setTimeout(function () {
@@ -31,6 +36,7 @@ $(function () {
                 checkBuffering();
                 i.attr('class', 'fas fa-pause');
                 audio.play();
+                pauseYoutubeVideo();
             } else {
                 playerTrack.removeClass('active');
                 albumArt.removeClass('active');
@@ -178,6 +184,7 @@ $(function () {
     }
 
     function selectTrack(flag) {
+        console.log(currIndex,flag);
         if (flag == 0 || flag == 1)
             ++currIndex;
         else
@@ -209,6 +216,7 @@ $(function () {
 
             if (flag != 0) {
                 var promise = audio.play();
+                pauseYoutubeVideo();
                 if (promise !== undefined) {
                     promise.then(_ => {
                         // Autoplay started!
@@ -230,7 +238,12 @@ $(function () {
             }
 
             albumName.text(currTitle);
-            trackName.text(currArtist);
+            if(songs[currIndex].hasOwnProperty("info")){
+                trackName.html(songs[currIndex].info.replace(/\n/g, '<br />'));
+            }else{
+                trackName.html(currArtist);
+            }
+            
             albumArt.find('img.active').removeClass('active');
             $('#_' + currArtwork).addClass('active');
 
@@ -267,7 +280,11 @@ $(function () {
             else
                 ++currIndex;
         }
+        youtubeIframe.attr('src', 'https://www.youtube.com/embed/' + songs[currIndex].youtube+'?enablejsapi=1');
+        downloadMP3.attr('href',songs[currIndex].audio);
+        downloadMP4.attr('href',songs[currIndex].video);
         changeUrlNoReload('?id=' + currYoutube);
+        onYouTubeIframeAPIReady();
     }
 
     function initPlayer() {
@@ -298,7 +315,14 @@ $(function () {
         });
         downloadButton.on('click', function () {
             downloadDialog(currIndex);
-        })
+        });
+        joox.on('click', function(){
+            if(songs[currIndex].hasOwnProperty("joox")){
+                downloadMe(songs[currIndex].joox);
+            }else{
+                downloadMe('https://www.joox.com/mm/artist/e9TU_G07__KhT1vPq7uVzA==');
+            }
+        });
     }
 
     $('ol.play-list li').click(function (e) {
@@ -387,29 +411,50 @@ $(function () {
     var url = new URL(url_string);
     if (isHas(url_string, 'id=')) {
         var songName = url.searchParams.get("id");
-        currIndex = 1+getSongIdByName(songName);
-        selectTrack(currIndex);
-    }else{
-        selectTrack(0);
+        getSongIdByName(songName);
+    } else {
+        selectTrack(1);
     }
 
     function changeUrlNoReload(newUrl) {
-        if (isOnline()) {
-            if (history.pushState) {
-                window.history.pushState(document.documentElement.outerHTML, document.title, newUrl);
-            } else {
-                document.location.href = newUrl;
-            }
+        if (history.pushState) {
+            window.history.pushState(document.documentElement.outerHTML, document.title, newUrl);
+        } else {
+            document.location.href = newUrl;
         }
     }
 
-    function getSongIdByName(title){
-        var a = 0;
-        songs.map(function(value,i){
-            if(value.youtube == title){
-                a = i;
+    function getSongIdByName(title) {
+        songs.map(function (value, i) {
+            if (value.youtube == title) {
+                currIndex = i+1;
+                selectTrack(-1);
             }
         });
-        return a;
     }
+
+    function onYouTubeIframeAPIReady() {
+        ytplayer = new YT.Player('yt', {
+            events: {
+              'onStateChange': onPlayerStateChange
+            }
+        });
+      }
+      
+      function onPlayerStateChange(event) {
+          if(event.data == 1){
+              if(!audio.paused){
+                playPause();
+              }
+          }
+      }
+    
+      function pauseYoutubeVideo(){
+        try {
+            ytplayer.pauseVideo();
+          }
+          catch(err) {
+            console.log(err);
+          }
+      }
 });

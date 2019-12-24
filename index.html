@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=mon3' />
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
 <script  src="./data.js"></script>
 <!-- MetaTag -->
 <!-- Primary Meta Tags -->
@@ -50,6 +51,15 @@
                     <div id="s-hover"></div>
                     <div id="seek-bar"></div>
                 </div>
+                <div class="embed-container"><iframe id="yt" frameborder="0" allowfullscreen></iframe></div>
+                <div class="btn-download">
+                    <a href="#" id="dl-mp3" class="buttonDownload">Download MP3</a>
+                    <a href="#" id="dl-mp4" class="buttonDownload">Download MP4</a>
+                </div>
+                <div class="joox-container">
+                    <div class="joox-text">Listen on</div>                  
+                    <img id="joox-icon" src="https://img.apksum.com/13/com.tencent.ibg.joox/5.4.7/icon.png"/>
+                </div>
             </div>
             <div id="player-content">
                 <div id="album-art">
@@ -69,14 +79,6 @@
                     <div class="control">
                         <div class="button" id="play-next">
                             <i class="fas fa-forward"></i>
-                        </div>
-                    </div>
-
-                    <div class="control">
-                        <div class="button" id="download">
-                            <i class="fas fa-download">
-                                
-                            </i>
                         </div>
                     </div>
                 </div>
