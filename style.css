@@ -4,19 +4,13 @@
 }
 
 @font-face {
-    font-family: 'mon3';
-    src: url('/fonts/mon3.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/mon3.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/mon3.woff2') format('woff2'), /* Super Modern Browsers */
-         url('/fonts/mon3.woff') format('woff'), /* Pretty Modern Browsers */
-         url('/fonts/mon3.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('/fonts/mon3.svg#svgFontName') format('svg'); /* Legacy iOS */
-  }
-
-html *
-{    
-   font-family: mon3 !important;
-}
+    font-family:'Unicode';
+    src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') format('woff'), url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.ttf') format('ttf');
+    }
+    html, body, p, div, span
+    {    
+       font-family: Unicode !important;
+    }
 
 body
 {
