@@ -10,7 +10,7 @@ body
     background-color: #ffeff5;
 }
 
-div{
+html, body,header h1#recent1 .label_title, strong, #recent2 .label_title, a,div,p ,post-body-snippet,title,widget-content{
     font-family:'MON3 Anonta 1'!important;
 }
 
