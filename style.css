@@ -1,18 +1,27 @@
+@font-face {
+	font-family: 'Padauk';
+	font-style: normal;
+	font-weight: 400;
+	src: local(""), local("Padauk-Regular"), url(https://connectmux.mitcloud.com/fonts/Padauk-Regular.ttf) format("ttf");
+	unicode-range: U+1000-109F, U+200B-200D, U+25CC
+}
+
 *:focus
 {
     outline: none;
 }
 
+html{
+    font-family: sans-serif;
+}
+
 body
 {
-    font-family: Helvetica, Arial;
+    font-family: "Padauk", SF Pro Display, sans-serif;
     margin: 0;
     background-color: #ffeff5;
 }
 
-html, body,header h1#recent1 .label_title, strong, #recent2 .label_title, a,div,p ,post-body-snippet,title,widget-content{
-    font-family:'MON3 Anonta 1'!important;
-}
 
 #app-cover{
     padding: 10px;
