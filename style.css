@@ -1,23 +1,10 @@
-@font-face {
-	font-family: 'Padauk';
-	font-style: normal;
-	font-weight: 400;
-	src: local(""), local("Padauk-Regular"), url(https://connectmux.mitcloud.com/fonts/Padauk-Regular.ttf) format("ttf");
-	unicode-range: U+1000-109F, U+200B-200D, U+25CC
-}
-
 *:focus
 {
     outline: none;
 }
 
-html{
-    font-family: sans-serif;
-}
-
 body
 {
-    font-family: "Padauk", SF Pro Display, sans-serif;
     margin: 0;
     background-color: #ffeff5;
 }
@@ -290,7 +277,6 @@ body
     height: 13px;
     color: #1f1f1f;
     font-size: 13px;
-    font-family: Helvetica;
     text-align: center;
     font-weight: bold;
     line-height: 1;
@@ -448,7 +434,6 @@ li:hover {
 	padding: 10px 25px;
 	background-color: #4CC713;
 	color: white;
-	font-family: sans-serif;
 	text-decoration: none;
 	font-size: 0.9em;
 	text-align: center;
