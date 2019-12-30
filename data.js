@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "AfterYouLeave-Artwork.jpg",
+        "audio": audioProtocol + "After You Leave - Khun Zaw Oo X Khun Htetz Naing.mp3",
+        "title": "After You Leave",
+        "artists": "ခွန်ဇော်ဦး၊ ခွန်ထက်နိုင်",
+        "info":"တဲမ်း - ခွန်ကျော်လိန် ၊ ခွန်ထက်နိုင်\nရွစ် - ခွန်ဇော်ဦး၊ ခွန်ထက်နိုင်\nပွုံႏဆောင်ႏ - နင်ႏပြုံးကြည်\nဒါရိုက်တာ/ကင်မရာ - ခွန်အောင်မြင့်၊ ခွန်ထွန်းလေး\nDrone - ခွန်ဟောဝ်ရက်\nProd. By Khun Tharnge",
+        "youtube": "rsDXFM3VAWE",
+        "video": videoProtocol + "After You Leave - Khun Zaw Oo X Khun Htetz Naing.mp4"
+    },
+    {
         "img": imgProtocol + "ForgiveForever.jpg",
         "audio": audioProtocol + "Forgive Forever - Khun Wai Yan Soe X Khun Htetz Naing.mp3",
         "title": "Forgive Forever",
