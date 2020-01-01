@@ -1,5 +1,4 @@
 $(function () {
-
     var playerTrack = $("#player-track"),
         bgArtwork = $('#bg-artwork'),
         bgArtworkUrl, albumName = $('#album-name'),
