@@ -19,7 +19,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nပွုံႏဆောင်ႏ - ခွန်ထက်နိုင်၊ Nang Shang Hom(နင်ႏဟွမ်ဟွိုန်ႏ)\nMusic - R Phyo\nMixing - Khun Tharnge\nDirected By Khun Thu Ta\nThanks - Zin Maung Htun, Khun Wai Yan Soe",
         "youtube": "CoRehNuFBtY",
-        "video": videoProtocol + "NarTaAoTaoMueNeJwel - Khun Htetz Naing Ft Khun Moung.mp4"
+        "video": videoProtocol + "Nar+Ta+Ao+Tao+Mue+Ne+Jel(1080P_HD).mp4"
     },
     {
         "img": imgProtocol + "AfterYouLeave-Artwork.jpg",
