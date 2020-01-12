@@ -13,6 +13,16 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "nann_leon_ngar.jpg",
+        "audio": audioProtocol + "Nann Leon Ngar.mp3",
+        "title": "နန်းလွဉ်ꩻငါႏ",
+        "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
+        "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nProd. by Khun Tharnge",
+        "joox":"https://www.joox.com/mm/single/M65CY76mDRcUPBSniAmXNw==",
+        "youtube": "g5uvfqOAS4A",
+        "video": videoProtocol + "NannLeonNgar_KhunHtetzNaing_X_KhunMoung.mp4"
+    },
+    {
         "img": imgProtocol + "NarTaAoTaoMueNeJwel.jpg",
         "audio": audioProtocol + "NarTaAoTaoMueNeJwel - Khun Htetz Naing Ft Khun Moung.mp3",
         "title": "နာꩻတအဝ်ႏတဝ်းမွူးနီꩻစွယ်ꩻ",
@@ -178,16 +188,6 @@ function generateSong() {
           "info":"တဲမ်း/ရွစ် - ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်\nMusic - Khun Htun Oo\nMixing - Khun Paing Moe",
           "youtube": "qQs8eB5C_UE",
           "video": videoProtocol + "LoLeinSwaTaPhyar - Khun Phoe Thar X Khun Htetz Naing.mp4"
-      },
-      {
-          "img": imgProtocol + "nann_leon_ngar.jpg",
-          "audio": audioProtocol + "Nann Leon Ngar.mp3",
-          "title": "နန်းလွဉ်ꩻငါႏ",
-          "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
-          "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nProd. by Khun Tharnge",
-          "joox":"https://www.joox.com/mm/single/M65CY76mDRcUPBSniAmXNw==",
-          "youtube": "dL3SWukakaY",
-          "video": videoProtocol + "NannLeonNgar - Khun Htetz Naing X Khun Moung.mp4"
       },
       {
           "img": imgProtocol + "pyan_lae_lar_pay_par.png",
