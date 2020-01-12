@@ -17,7 +17,7 @@ function generateSong() {
         "audio": audioProtocol + "Nann Leon Ngar.mp3",
         "title": "နန်းလွဉ်ꩻငါႏ",
         "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
-        "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nProd. by Khun Tharnge",
+        "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nပွုံႏဆောင်ႏ - ခွန်ထက်နိုင်၊ နင်ႏနွယ်နီခမ်း၊ ခွန်မောင်ႏ\nEditor - Aung Khin\nDirector - Phone Hay Ko\nProd. by Khun Tharnge",
         "joox":"https://www.joox.com/mm/single/M65CY76mDRcUPBSniAmXNw==",
         "youtube": "g5uvfqOAS4A",
         "video": videoProtocol + "NannLeonNgar_KhunHtetzNaing_X_KhunMoung.mp4"
