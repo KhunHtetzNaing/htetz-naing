@@ -20,7 +20,7 @@ function generateSong() {
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nပွုံႏဆောင်ႏ - ခွန်ထက်နိုင်၊ နင်ႏနွယ်နီခမ်း၊ ခွန်မောင်ႏ\nEditor - Aung Khin\nDirector - Phone Hay Ko\nProd. by Khun Tharnge",
         "joox":"https://www.joox.com/mm/single/M65CY76mDRcUPBSniAmXNw==",
         "youtube": "g5uvfqOAS4A",
-        "video": videoProtocol + "NannLeonNgar_KhunHtetzNaing_X_KhunMoung.mp4"
+        "video": videoProtocol + "http://www.mediafire.com/file/ceatj3y2m2o9o34/NannLeonNgar_KhunHtetzNaing_X_KhunMoung.mp4/file"
     },
     {
         "img": imgProtocol + "NarTaAoTaoMueNeJwel.jpg",
