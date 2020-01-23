@@ -1,7 +1,7 @@
         //OnlineTag
-        var imgOnline = '/songs/raw/master/src/img/',
-        audioOnline = '/songs/raw/master/src/audio/',
-        videoOnline = '/songs/raw/master/src/video/';
+        var imgOnline = '/songs/src/img/',
+        audioOnline = '/songs/src/audio/',
+        videoOnline = '/songs/src/video/';
         
 function isOnline() {
   return window.location.protocol != 'file:';
