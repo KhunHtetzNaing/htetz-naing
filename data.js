@@ -1,7 +1,7 @@
         //OnlineTag
-        var imgOnline = 'https://glcdn.githack.com/HtetzNaing/songs/raw/master/src/img/',
-        audioOnline = 'https://glcdn.githack.com/HtetzNaing/songs/raw/master/src/audio/',
-        videoOnline = 'https://glcdn.githack.com/HtetzNaing/songs/raw/master/src/video/';
+        var imgOnline = '/songs/raw/master/src/img/',
+        audioOnline = '/songs/raw/master/src/audio/',
+        videoOnline = '/songs/raw/master/src/video/';
         
 function isOnline() {
   return window.location.protocol != 'file:';
