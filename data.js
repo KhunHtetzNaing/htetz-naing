@@ -1,7 +1,7 @@
         //OnlineTag
         var imgOnline = '/songs/src/img/',
-        audioOnline = '/songs/src/audio/',
-        videoOnline = '/songs/src/video/';
+        audioOnline = '/dl.php?file=',
+        videoOnline = '/dl.php?file=';
         
 function isOnline() {
   return window.location.protocol != 'file:';
@@ -14,7 +14,7 @@ function generateSong() {
   var temp = [
     {
         "img": imgProtocol + "nann_leon_ngar.jpg",
-        "audio": audioProtocol + "Nann Leon Ngar.mp3",
+        "audio": audioProtocol + "Nann_Leon_Ngar.mp3",
         "title": "နန်းလွဉ်ꩻငါႏ",
         "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nပွုံႏဆောင်ႏ - ခွန်ထက်နိုင်၊ နင်ႏနွယ်နီခမ်း၊ ခွန်မောင်ႏ\nEditor - Aung Khin\nDirector - Phone Hay Ko\nProd. by Khun Tharnge",
@@ -29,7 +29,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nပွုံႏဆောင်ႏ - ခွန်ထက်နိုင်၊ Nang Shang Hom(နင်ႏဟွမ်ဟွိုန်ႏ)\nMusic - R Phyo\nMixing - Khun Tharnge\nDirected By Khun Thu Ta\nThanks - Zin Maung Htun, Khun Wai Yan Soe",
         "youtube": "CoRehNuFBtY",
-        "video": videoProtocol + "Nar+Ta+Ao+Tao+Mue+Ne+Jel(1080P_HD).mp4"
+        "video": videoProtocol + "NarTaAoTaoMueNeJwel - Khun Htetz Naing Ft Khun Moung.mp4"
     },
     {
         "img": imgProtocol + "AfterYouLeave-Artwork.jpg",
