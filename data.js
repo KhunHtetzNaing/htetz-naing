@@ -13,7 +13,7 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
-        "img": imgProtocol + "ForYou.jpg",
+        "img": imgProtocol + "ForYou.png",
         "audio": audioProtocol + "ForYou-KhunHtetzNaing.mp3",
         "title": "မင်းအတွက် (For You)",
         "artists": "ခွန်ထက်နိုင်",
