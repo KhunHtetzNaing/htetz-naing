@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "ForYou.jpg",
+        "audio": audioProtocol + "ForYou-KhunHtetzNaing.mp3",
+        "title": "မင်းအတွက် (For You)",
+        "artists": "ခွန်ထက်နိုင်",
+        "info":"ရေး/ဆို - ခွန်ထက်နိုင်\nBeat - Holding You by Dizzla D Music\nMixing - Khun Tharnge\nCamera & Edit - Kaung Kham(Hopong)",
+        "youtube": "P4V_1xq4XE8",
+        "video": videoProtocol + "ForYou-KhunHtetzNaing.mp4"
+    },
+    {
         "img": imgProtocol + "nann_leon_ngar.jpg",
         "audio": audioProtocol + "Nann Leon Ngar.mp3",
         "title": "နန်းလွဉ်ꩻငါႏ",
