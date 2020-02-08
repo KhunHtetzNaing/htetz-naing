@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "vday.png",
+        "audio": audioProtocol + "VDay-KhunHtetzNaingXKhunWaiYanSoeXKhunPaungPaungXKhunMoung.mp3",
+        "title": "ထာꩻရက်မွူးနီꩻ (V Day)",
+        "artists": "ခွန်ထက်နိုင်၊ ခွန်ဝေယံစိုး၊ ခွန်ပေါင်းပေါင်း၊ ခွန်မောင်ႏ",
+        "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်ဝေယံစိုး၊ ခွန်ပေါင်းပေါင်း၊ ခွန်မောင်ႏ\nProd. by July Tun\n Cover Design by Wai Yan\nLyrics Video by Phone Hay Ko",
+        "youtube": "AaX5l9IYdlY",
+        "video": videoProtocol + "VDay-KhunHtetzNaingXKhunWaiYanSoeXKhunPaungPaungXKhunMoung.mp4"
+    },
+    {
         "img": imgProtocol + "ForYou.png",
         "audio": audioProtocol + "ForYou-KhunHtetzNaing.mp3",
         "title": "မင်းအတွက် (For You)",
