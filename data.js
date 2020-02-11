@@ -19,7 +19,7 @@ function generateSong() {
         "artists": "ခွန်လဝ်းရက်၊ ခွန်မောင်ႏ၊ ခွန်ထက်နိုင်",
         "info":"တဲမ်း - ခွန်နေထွန်း၊ ခွန်မောင်ႏ၊ ခွန်ထက်နိုင်\nရွစ် - ခွန်လဝ်းရက်၊ ခွန်မောင်ႏ၊ ခွန်ထက်နိုင်\nMusic - R Phyo\nMixing - Khun Tharnge\nကင်မရာ - ထွန်းဓါတ်ပုံ၊ ကိုငယ်(မိုင်းပွန်)\nတည်းဖြတ် - ဦးခွန်ဆန်းတစ်",
         "youtube": "Yx-KNGjj4K8",
-        "video": videoProtocol + "LoSayNar-KhunLaoRak_KhunMoung_KhunHtetzNaing.mp4"
+        "video": videoProtocol + "LoSayNar-KhunLaoRak-KhunMoung-KhunHtetzNaing.mp4"
     },
     {
         "img": imgProtocol + "vday.png",
