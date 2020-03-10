@@ -28,6 +28,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ ခွန်ဝေယံစိုး၊ ခွန်ပေါင်းပေါင်း၊ ခွန်မောင်ႏ",
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်ဝေယံစိုး၊ ခွန်ပေါင်းပေါင်း၊ ခွန်မောင်ႏ\nProd. by July Tun\n Cover Design by Wai Yan\nLyrics Video by Phone Hay Ko",
         "youtube": "AaX5l9IYdlY",
+        "joox":"https://www.joox.com/mm/single/UxT4qBH5C4IbKbhdUA4UYQ==",
         "video": videoProtocol + "VDay-KhunHtetzNaingXKhunWaiYanSoeXKhunPaungPaungXKhunMoung.mp4"
     },
     {
@@ -37,6 +38,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်",
         "info":"ရေး/ဆို - ခွန်ထက်နိုင်\nBeat - Holding You by Dizzla D Music\nMixing - Khun Tharnge\nCamera & Edit - Kaung Kham(Hopong)",
         "youtube": "P4V_1xq4XE8",
+        "joox":"https://www.joox.com/mm/single/wVJN6jvHE162jJsB++qeYw==",
         "video": videoProtocol + "ForYou-KhunHtetzNaing.mp4"
     },
     {
@@ -56,6 +58,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nပွုံႏဆောင်ႏ - ခွန်ထက်နိုင်၊ Nang Shang Hom(နင်ႏဟွမ်ဟွိုန်ႏ)\nMusic - R Phyo\nMixing - Khun Tharnge\nDirected By Khun Thu Ta\nThanks - Zin Maung Htun, Khun Wai Yan Soe",
         "youtube": "CoRehNuFBtY",
+        "joox":"https://www.joox.com/mm/single/+kV40Edbm6ZaRawhklhNug==",
         "video": videoProtocol + "NarTaAoTaoMueNeJwel - Khun Htetz Naing Ft Khun Moung.mp4"
     },
     {
@@ -102,6 +105,7 @@ function generateSong() {
           "artists": "ခွန်ထွန်းလွင်၊ ခွန်ထက်နိုင်",
           "info":"တဲမ်း/ရွစ် - ခွန်ထွန်းလွင်၊ ခွန်ထက်နိုင်\nMusic - July Tun\nMixing - Khun Tharnge",
           "youtube": "piQ4-BaRqmM",
+          "joox":"https://www.joox.com/mm/single/3M_sIK3JOrXd+_XPOx2mqA==",
           "video": videoProtocol + "YamSayNar - Khun Htetz Naing X Khun Tun Lwin.mp4"
       },
       {
@@ -111,6 +115,7 @@ function generateSong() {
           "artists": "ခွန်လဝ်းရက်၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
           "info":"တဲမ်း/ရွစ် - ခွန်လဝ်းရက်၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nMusic - Khun Myo Aung\nMixing - Khun Tharnge",
           "youtube": "R_qEAThSh3I",
+          "joox":"https://www.joox.com/mm/single/NrLo2a8kBniaUyZ7OtAdSw==",
           "video": videoProtocol + "TamPho - Khun Lao Rak X Khun Htetz Naing X Khun Moung.mp4"
       },
       {
@@ -139,6 +144,7 @@ function generateSong() {
           "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
           "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nMusic - R Phyo\nMixing - Khun Tharnge",
           "youtube": "IhJk273Kgoc",
+          "joox":"https://www.joox.com/mm/single/ljrdTi79on5hZOiWOVYU0w==",
           "video": videoProtocol + "Kham - Khun Htetz Naing X Khun Moung.mp4"
       },
       {
@@ -168,6 +174,7 @@ function generateSong() {
           "artists": "ခွန်ထက်နိုင်",
           "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်\nပွုံႏဆောင်ႏ - Khun Htetz Naing, Khun T Htwe, Karyan Shoon Lae\nDirected by KhunThuTa\nMusic & Mixing - July Tun\nRecord - Khun Tharnge",
           "youtube": "3AP0b1VEJ9U",
+          "joox":"https://www.joox.com/mm/single/4XOsfkhFFxww0XGdmHycuw==",
           "video": videoProtocol + "KayNatDyar - Khun Htetz Naing.mp4"
       },
       {
@@ -177,6 +184,7 @@ function generateSong() {
           "artists": "ခွန်ထက်နိုင်",
           "youtube": "VLlQ-jI0QVM",
           "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်\nMusic - R Phyo\nMixing - Khun Tharnge",
+          "joox":"https://www.joox.com/mm/single/LJdFoP78oRJjS7d+cskLMA==",
           "video": videoProtocol + "Rak Ta Phae Sar - Khun Htetz Naing.mp4"
       },
       {
@@ -186,6 +194,7 @@ function generateSong() {
           "artists": "ခွန်ထက်နိုင်၊ နင်ႏခမ်းဟေမာန်",
           "info":"တဲမ်း - ခွန်ထက်နိုင်\nရွစ် - ခွန်ထက်နိုင်၊ နင်ႏခမ်းဟေမာန်\nMusic - NagarLay\nMixing - Khun Naing Win Phyo",
           "youtube": "nlPP9cV6Y34",
+          "joox":"https://www.joox.com/mm/single/6hwuq_tDaJ7DEOTLkLZAaA==",
           "video": videoProtocol + "Kham Pha Tao - Khun Htetz Naing X Nang Kham Hay Mhan.mp4"
       },
       {
@@ -205,6 +214,7 @@ function generateSong() {
           "artists": "ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး",
           "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ၊ ခွန်ဝေယံစိုး\nMusic - NagarLay\nMixing - Khun Tharnge",
           "youtube": "RXKlT8pj2x4",
+          "joox":"https://www.joox.com/mm/single/doBVnY_ZEFH2bg0ODBsrOA==",
           "video": videoProtocol + "RakLeinNar2DEMO- Khun Htetz Naing X Khun Moung X Khun Wai Yan Soe.mp4"
       },
       {
