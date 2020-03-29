@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "2AChaiSutNeZatRan.jpg",
+        "audio": audioProtocol + "2 A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp3",
+        "title": "အဆုဲင်ꩻသွတ်ꩻနီဇာတ်ရဲဉ်ႏ (MV)",
+        "artists": "ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း",
+        "info":"ရွစ် - ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း\nတဲမ်း - ခွန်ထက်နိုင်\nMusic & Mixing - July Tun\nDirected By Khun Thu Tha",
+        "youtube": "UBMLyZcHzjc",
+        "video": "/songs/src/video/2 A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp4"
+    },
+    {
         "img": imgProtocol + "LoSayNar.jpg",
         "audio": audioProtocol + "LoSayNar-KhunLaoRak_KhunMoung_KhunHtetzNaing.mp3",
         "title": "လိုႏသေနာႏ",
