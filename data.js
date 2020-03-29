@@ -1,7 +1,7 @@
         //OnlineTag
-        var imgOnline = '/songs/src/img/',
-        audioOnline = '/dl.php?file=',
-        videoOnline = '/dl.php?file=';
+        var imgOnline = 'https://gitlab.com/HtetzNaing/songs/-/raw/master/src/img/',
+        audioOnline = 'https://gitlab.com/HtetzNaing/songs/-/raw/master/src/audio/',
+        videoOnline = 'https://gitlab.com/HtetzNaing/songs/-/raw/master/src/video/';
         
 function isOnline() {
   return window.location.protocol != 'file:';
@@ -19,7 +19,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း",
         "info":"ရွစ် - ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း\nတဲမ်း - ခွန်ထက်နိုင်\nMusic & Mixing - July Tun\nDirected By Khun Thu Tha",
         "youtube": "UBMLyZcHzjc",
-        "video": "/songs/src/video/2 A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp4"
+        "video": videoProtocol + "2 A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp4"
     },
     {
         "img": imgProtocol + "LoSayNar.jpg",
@@ -28,7 +28,7 @@ function generateSong() {
         "artists": "ခွန်လဝ်းရက်၊ ခွန်မောင်ႏ၊ ခွန်ထက်နိုင်",
         "info":"တဲမ်း - ခွန်နေထွန်း၊ ခွန်မောင်ႏ၊ ခွန်ထက်နိုင်\nရွစ် - ခွန်လဝ်းရက်၊ ခွန်မောင်ႏ၊ ခွန်ထက်နိုင်\nMusic - R Phyo\nMixing - Khun Tharnge\nကင်မရာ - ထွန်းဓါတ်ပုံ၊ ကိုငယ်(မိုင်းပွန်)\nတည်းဖြတ် - ဦးခွန်ဆန်းတစ်",
         "youtube": "Yx-KNGjj4K8",
-        "video": "/songs/src/video/LoSayNar.mp4"
+        "video": videoProtocol + "LoSayNar-KhunLaoRak_KhunMoung_KhunHtetzNaing.mp4"
     },
     {
         "img": imgProtocol + "vday.png",
