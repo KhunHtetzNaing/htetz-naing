@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "Remix_LoLeinSwaTaPhyar_KhunHtetzNaing.png",
+        "audio": audioProtocol + "Remix_LoLeinSwaTaPhyar_KhunHtetzNaing.mp3",
+        "title": "လွိုလဲဉ်းသွꩻတဖြာꩻ (REMIX)",
+        "artists": "ခွန်ထက်နိုင်",
+        "info":"တဲမ်း - ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်\nရွစ် - ခွန်ထက်နိုင်၊\nCast - Khun Htetz Naing, Khun Thar Doon, Nang Su Kyi, May Htar Khaing, Yoon Mi Mi Han, San Dar\nMusic & Mixing - July Tun\nPresented By UG Entertainment",
+        "youtube": "A7tkyR7igdE",
+        "video": videoProtocol + "Remix_LoLeinSwaTaPhyar_KhunHtetzNaing.mp4"
+    },
+    {
         "img": imgProtocol + "2AChaiSutNeZatRan.jpg",
         "audio": audioProtocol + "2 A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp3",
         "title": "အဆုဲင်ꩻသွတ်ꩻနီဇာတ်ရဲဉ်ႏ (MV)",
