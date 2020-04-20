@@ -4,7 +4,7 @@
         videoOnline = 'https://gitlab.com/HtetzNaing/songs/-/raw/master/src/video/';
         
 function isOnline() {
-  return window.location.protocol != 'file:';
+  return window.location.protocol == 'file:';
 }
 
 function generateSong() {
@@ -12,6 +12,15 @@ function generateSong() {
       audioProtocol = (isOnline() == true) ? audioOnline : './src/audio/',
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
+    {
+        "img": imgProtocol + "PaOMaLay2.png",
+        "audio": audioProtocol + "PaOMaLay2.mp3",
+        "title": "ကျွန်တော်ချစ်သူပအိုဝ်းမလေး",
+        "artists": "ခွန်ထက်နိုင်",
+        "info":"ရေး/ဆို - ခွန်ထက်နိုင်\nCast - ရဲမိုးချစ်, နန်းသီရိသူ @နန်းခမ်းလောဝ်\nMusic & Mixing - July Tun\nDirected By Khun Thuta\nCover Photo - Nang Nge Mu",
+        "youtube": "Z3shkurdSbQ",
+        "video": videoProtocol + "PaOMaLay2.mp4"
+    },
     {
         "img": imgProtocol + "Remix_LoLeinSwaTaPhyar_KhunHtetzNaing.png",
         "audio": audioProtocol + "Remix_LoLeinSwaTaPhyar_KhunHtetzNaing.mp3",
