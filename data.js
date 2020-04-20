@@ -4,7 +4,7 @@
         videoOnline = 'https://gitlab.com/HtetzNaing/songs/-/raw/master/src/video/';
         
 function isOnline() {
-  return window.location.protocol == 'file:';
+  return window.location.protocol != 'file:';
 }
 
 function generateSong() {
