@@ -19,7 +19,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ ခွန်ပေါင်းပေါင်း",
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်ပေါင်းပေါင်း\nပွုံႏဆောင်ႏ - နင်ႏမူႏစင်\nBeat - PNK Beat THAI\nMixing - July Tun",
         "youtube": "aNhm3h4UptA",
-        "video": videoProtocol + "Rak-KhunHtetzNaingXKhunPaungPaung.mp4"
+        "video": videoProtocol + "Rak-KhunHtetzNaingXKhunPaungPaung.mkv"
     },
     {
         "img": imgProtocol + "PaOMaLay2.png",
