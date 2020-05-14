@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "Rak.jpg",
+        "audio": audioProtocol + "Rak-KhunHtetzNaingXKhunPaungPaung.mp3",
+        "title": "ရက်",
+        "artists": "ခွန်ထက်နိုင်၊ ခွန်ပေါင်းပေါင်း",
+        "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်ပေါင်းပေါင်း\nပွုံႏဆောင်ႏ - နင်ႏမူႏစင်\nBeat - PNK Beat THAI\nMixing - July Tun",
+        "youtube": "aNhm3h4UptA",
+        "video": videoProtocol + "Rak-KhunHtetzNaingXKhunPaungPaung.mp4"
+    },
+    {
         "img": imgProtocol + "PaOMaLay2.png",
         "audio": audioProtocol + "PaOMaLay2.mp3",
         "title": "ကျွန်တော်ချစ်သူပအိုဝ်းမလေး",
