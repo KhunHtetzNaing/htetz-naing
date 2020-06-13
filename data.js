@@ -46,6 +46,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်",
         "info":"တဲမ်း - ခွန်ဖိုးသား၊ ခွန်ထက်နိုင်\nရွစ် - ခွန်ထက်နိုင်၊\nCast - Khun Htetz Naing, Khun Thar Doon, Nang Su Kyi, May Htar Khaing, Yoon Mi Mi Han, San Dar\nMusic & Mixing - July Tun\nPresented By UG Entertainment",
         "youtube": "A7tkyR7igdE",
+        "joox":"https://www.joox.com/mm/single/fN5Y0WyoQdPffwR+_m8lpw==",
         "video": videoProtocol + "Remix_LoLeinSwaTaPhyar_KhunHtetzNaing.mp4"
     },
     {
@@ -55,6 +56,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း",
         "info":"ရွစ် - ခွန်ထက်နိုင်၊ နင်ႏချယ်ရီဝင်း\nတဲမ်း - ခွန်ထက်နိုင်\nMusic & Mixing - July Tun\nDirected By Khun Thu Tha",
         "youtube": "UBMLyZcHzjc",
+        "joox":"https://www.joox.com/mm/single/TtRjNzSC+aDBeXOkSjcqeA==",
         "video": videoProtocol + "2 A Chai Sut Ne Zat Ran - Khun Htetz Naing X Nang Cherry Win.mp4"
     },
     {
