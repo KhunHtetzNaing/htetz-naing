@@ -4,7 +4,7 @@
         videoOnline = 'https://gitlab.com/HtetzNaing/songs/-/raw/master/src/video/';
         
 function isOnline() {
-  return window.location.protocol != 'file:';
+  return window.location.protocol == 'file:';
 }
 
 function generateSong() {
@@ -12,6 +12,15 @@ function generateSong() {
       audioProtocol = (isOnline() == true) ? audioOnline : './src/audio/',
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
+    {
+        "img": imgProtocol + "Sorry.jpg",
+        "audio": audioProtocol + "Sorry - Khun Htetz Naing.mp3",
+        "title": "Sorry",
+        "artists": "ခွန်ထက်နိုင်",
+        "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်\nBeat - PNK Beat THAI\nMixing - Khun Tharnge",
+        "youtube": "LEGcf2uzwvs",
+        "video": videoProtocol + "Sorry - Khun Htetz Naing.mp4"
+    },
     {
         "img": imgProtocol + "Rak.jpg",
         "audio": audioProtocol + "Rak-KhunHtetzNaingXKhunPaungPaung.mp3",
