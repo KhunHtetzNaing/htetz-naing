@@ -12,6 +12,15 @@ function generateSong() {
       audioProtocol = (isOnline() == true) ? audioOnline : './src/audio/',
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
+  {
+        "img": imgProtocol + "min-rak-nar.png",
+        "audio": audioProtocol + "MinRakNar-KhunPaungPaungXKhunHtetzNaing.mp3",
+        "title": "မဲဉ်ရက်နာꩻ",
+        "artists": "ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်",
+        "info":"တဲမ်း/ရွစ် - ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်\nBeat - Elpha\nMixing - Khun Tharnge",
+        "youtube": "vgl0-W11a-A",
+        "video": "https://github.com/KhunHtetzNaing/Files/raw/master/MinRakNar-KhunPaungPaungXKhunHtetzNaing.mp4"
+    },
     {
         "img": imgProtocol + "Sorry.jpg",
         "audio": audioProtocol + "Sorry - Khun Htetz Naing.mp3",
