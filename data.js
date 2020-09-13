@@ -17,9 +17,9 @@ function generateSong() {
         "audio": audioProtocol + "MinRakNar-KhunPaungPaungXKhunHtetzNaing.mp3",
         "title": "မဲဉ်ရက်နာꩻ",
         "artists": "ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်",
-        "info":"တဲမ်း/ရွစ် - ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်\nBeat - Elpha\nMixing - Khun Tharnge",
-        "youtube": "vgl0-W11a-A",
-        "video": "https://github.com/KhunHtetzNaing/Files/raw/master/MinRakNar-KhunPaungPaungXKhunHtetzNaing.mp4"
+        "info":"တဲမ်း/ရွစ် - ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်\nဒုံႏ - Elpha\nမဲꩻနုဲင်း - ခွန်ပေါင်းပေါင်း၊ ခွန်စည်သူ၊ ခွန်အေးပေ့၊ နင်ႏမိုး၊ နင်ႏဂျူးဂျူး၊ နင်ႏနွေးနွေးပိုင်\nခြပ်ချောꩻငဝ်း - ခွန်သားငယ်\nCamera - HLTM Media Group, Khun Myat Bone Hlaing\nEditor - Saw Thike Tun (HLTM Production)",
+        "youtube": "ATGpQR3HSMY",
+        "video": "MinRakNar-KhunPaungPaungXKhunHtetzNaing.mp4"
     },
     {
         "img": imgProtocol + "Sorry.jpg",
@@ -37,6 +37,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်၊ ခွန်ပေါင်းပေါင်း",
         "info":"တဲမ်း/ရွစ် - ခွန်ထက်နိုင်၊ ခွန်ပေါင်းပေါင်း\nပွုံႏဆောင်ႏ - နင်ႏမူႏစင်\nBeat - PNK Beat THAI\nMixing - July Tun",
         "youtube": "aNhm3h4UptA",
+		"joox":"https://www.joox.com/mm/single/IiM3EH2AhA4NHTFPeYC3LQ==",
         "video": videoProtocol + "Rak-KhunHtetzNaingXKhunPaungPaung.mkv"
     },
     {
@@ -46,6 +47,7 @@ function generateSong() {
         "artists": "ခွန်ထက်နိုင်",
         "info":"ရေး/ဆို - ခွန်ထက်နိုင်\nCast - ရဲမိုးချစ်, နန်းသီရိသူ @နန်းခမ်းလောဝ်\nMusic & Mixing - July Tun\nDirected By Khun Thuta\nCover Photo - Nang Nge Mu",
         "youtube": "Z3shkurdSbQ",
+		"joox":"https://www.joox.com/mm/single/E0m09tm_SLNK1_d0M7ICCw==",
         "video": videoProtocol + "PaOMaLay2.mp4"
     },
     {
