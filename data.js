@@ -19,7 +19,7 @@ function generateSong() {
         "artists": "ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်",
         "info":"တဲမ်း/ရွစ် - ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်\nဒုံႏ - Elpha\nမဲꩻနုဲင်း - ခွန်ပေါင်းပေါင်း၊ ခွန်စည်သူ၊ ခွန်အေးပေ့၊ နင်ႏမိုး၊ နင်ႏဂျူးဂျူး၊ နင်ႏနွေးနွေးပိုင်\nခြပ်ချောꩻငဝ်း - ခွန်သားငယ်\nCamera - HLTM Media Group, Khun Myat Bone Hlaing\nEditor - Saw Thike Tun (HLTM Production)",
         "youtube": "ATGpQR3HSMY",
-        "video": "MinRakNar-KhunPaungPaungXKhunHtetzNaing.mp4"
+        "video": videoProtocol + "MinRakNar-KhunPaungPaungXKhunHtetzNaing.mp4"
     },
     {
         "img": imgProtocol + "Sorry.jpg",
