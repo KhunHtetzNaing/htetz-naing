@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "tamannyartao.jpg",
+        "audio": audioProtocol + "TaManNyarTao_KhunAWann_KhunMyoKyaw_KhunHtetzNaing.mp3",
+        "title": "တမဲဉ်ညာꩻတဝ်း",
+        "artists": "ခွန်အေဝမ်း၊ ခွန်မျိုးကျော်၊ ခွန်ထက်နိုင်",
+        "info":"တဲမ်း - ခွန်မျိုးကျော်၊ ခွန်ထက်နိုင်\nရွစ် - ခွန်အေဝမ်း၊ ခွန်မျိုးကျော်၊ ခွန်ထက်နိုင်\nProd. Khun Ye Thway (Studio-7)",
+        "youtube": "4YSvgqvrbOc",
+        "video": videoProtocol + "TaManNyarTao_KhunAWann_KhunMyoKyaw_KhunHtetzNaing.mp4"
+    },
+    {
         "img": imgProtocol + "SaLyarMwoneDwum.jpg",
         "audio": audioProtocol + "SaLyarMwoneDwum_KhunHtooNaungXKhunHtetzNaing.mp3",
         "title": "သ့ꩻလျားမွိုန်းဒွုမ်",
