@@ -13,6 +13,15 @@ function generateSong() {
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
     {
+        "img": imgProtocol + "CovidHtarRak.jpg",
+        "audio": audioProtocol + "CovidHtarRak.mp3",
+        "title": "Covid ထာꩻရက်",
+        "artists": "ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်၊ ခွန်ထူးနောင်",
+        "info":"တဲမ်း/ရွစ် - ခွန်ပေါင်းပေါင်း၊ ခွန်ထက်နိုင်၊ ခွန်ထူးနောင်\nCover & Lyrics Video - Bo Bo Kyaw\nဒုံႏ - ဂျူလိုင်ထွန်း\nခြပ်ချောꩻငဝ်း - ခွန်သားငယ်",
+        "youtube": "IRteVbHZlsA",
+        "video": videoProtocol + "CovidHtarRak.mp4"
+    },
+    {
         "img": imgProtocol + "tamannyartao.jpg",
         "audio": audioProtocol + "TaManNyarTao_KhunAWann_KhunMyoKyaw_KhunHtetzNaing.mp3",
         "title": "တမဲဉ်ညာꩻတဝ်း",
@@ -26,7 +35,7 @@ function generateSong() {
         "audio": audioProtocol + "SaLyarMwoneDwum_KhunHtooNaungXKhunHtetzNaing.mp3",
         "title": "သ့ꩻလျားမွိုန်းဒွုမ်",
         "artists": "ခွန်ထူးနောင်၊ ခွန်ထက်နိုင်",
-        "info":"တဲမ်း/ရွစ် - ခွန်ထူးနောင်၊ ခွန်ထက်နိုင်\nဒုံႏ -  VIROFT BEATZ  \nခြပ်ချောꩻငဝ် - TREX\nCover Art - @happy.drawing.kamol (IG)",
+        "info":"တဲမ်း/ရွစ် - ခွန်ထူးနောင်၊ ခွန်ထက်နိုင်\nဒုံႏ -  VIROFT BEATZ  \nခြပ်ချောꩻငဝ်း - TREX\nCover Art - @happy.drawing.kamol (IG)",
         "youtube": "GpNl_l4s2X4",
         "video": videoProtocol + "SaLyarMwoneDwum_KhunHtooNaungXKhunHtetzNaing.mp4"
     },
