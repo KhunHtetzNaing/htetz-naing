@@ -12,6 +12,15 @@ function generateSong() {
       audioProtocol = (isOnline() == true) ? audioOnline : './src/audio/',
       videoProtocol = (isOnline() == true) ? videoOnline : './src/video/';
   var temp = [
+  {
+        "img": imgProtocol + "KywalLeonLein_KhunAungHto_KhunHtetzNaing_KhunMoung.jpg",
+        "audio": audioProtocol + "KywalLeonLein_KhunAungHto_KhunHtetzNaing_KhunMoung.mp3",
+        "title": "စွယ်ꩻလွဉ်ꩻလဲဉ်း",
+        "artists": "ခွန်အောင်ႏထို၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ",
+        "info":"တဲမ်း/ရွစ် - ခွန်အောင်ႏထို၊ ခွန်ထက်နိုင်၊ ခွန်မောင်ႏ\nဒုံႏ - Bobby Beatz\nခြပ်ချောꩻငဝ်း - NAY\nCamera & Edit - ခွန်မြတ်ဘုန်းလှိုင်\nမာꩻနုဲင်း - နင်ႏခင်မေဦး",
+        "youtube": "1VEfRQUCjYc",
+        "video": videoProtocol + "KywalLeonLein_KhunAungHto_KhunHtetzNaing_KhunMoung.mp4"
+    },
     {
         "img": imgProtocol + "CovidHtarRak.jpg",
         "audio": audioProtocol + "CovidHtarRak.mp3",
